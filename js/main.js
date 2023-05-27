@@ -8,8 +8,9 @@ function renderPost (data) {
     data.slice(0, 100).forEach((item) => {
         const cloneItem = elItemTemp.cloneNode(true);
         
-        cloneItem.querySelector(".js-item-title").textContent = item.title;
+        cloneItem.querySelector(".js-item-title").textContent = item.title.slice(0, 26);
         cloneItem.querySelector(".js-item-photo").src = item.thumbnailUrl;
+        // cloneItem.querySelector(".js-item-photo").alt = item.title;
         cloneItem.querySelector(".js-item-url").textContent = item.url;
         
         newPostFragment.appendChild(cloneItem);
