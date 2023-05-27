@@ -11,26 +11,31 @@
 <body class="bg-info">
     
     <div class="container">
-        <div class="js-item-result row">
-    
+        <div class="js-item-result row d-flex flex-row my-3">
+            
         </div>
     </div>
     <!-- •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• -->
     <template class="js-card-temp">
-        <div class="col-4 mx-1">
-            <div class="card border-5 rounded-4 border-success">
+        <div class="col-3 mb-3">
+            <div class="card h-100 border-2 rounded-2 border-success">
                 <div class="card-header">
                     <h4 class="js-item-title">
                         Item title
                     </h4>
                 </div>
-                <div class="js-item-photo card-body">
-                    <!-- <p>photo</p> -->
+                <div class="card-body d-flex  justify-content-center">
+                    <img class="js-item-photo mx-auto" src="#" alt="/">
                 </div>
                 <div class="card-footer">
-                    <p class="js-item-url">
-                        url
-                    </p>
+                    <strong >
+                        <p>URL address is below:</p>
+                        <code target="_blank">
+                            <p class="js-item-url">
+                                
+                            </p>
+                        </code>
+                    </strong>
                 </div>
             </div>
         </div>

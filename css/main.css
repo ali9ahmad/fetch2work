@@ -30,7 +30,10 @@ body{
     margin: 0;
     font-family: "Livvic", "Arial", sans-serif;
     font-weight: 600;
-    background-color: var(--main-bg-color);
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    
+    
 }
 
 img{
@@ -73,3 +76,11 @@ a{
 }
 /************** /ROOT STYLES END **************/
 /* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+
+code {
+    cursor: pointer;
+}
+
+code:hover {
+    color: blue;
+}

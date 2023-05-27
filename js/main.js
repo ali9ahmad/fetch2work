@@ -5,11 +5,11 @@ loading = true;
 newPostFragment = document.createDocumentFragment();
 
 function renderPost (data) {
-    data.slice(0, 10).forEach((item) => {
+    data.slice(0, 100).forEach((item) => {
         const cloneItem = elItemTemp.cloneNode(true);
         
         cloneItem.querySelector(".js-item-title").textContent = item.title;
-        cloneItem.querySelector(".js-item-photo").textContent = item.thumbnailUrl;
+        cloneItem.querySelector(".js-item-photo").src = item.thumbnailUrl;
         cloneItem.querySelector(".js-item-url").textContent = item.url;
         
         newPostFragment.appendChild(cloneItem);
@@ -29,6 +29,5 @@ fetch (API_PATH)
 .finally (() => {
     console.log("fatch is done");
     loading = false;
-    
 });
 
